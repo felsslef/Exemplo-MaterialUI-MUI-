@@ -119,7 +119,7 @@ export default function App() {
       <ScrollReveal>
         <Typography variant="overline" color="secondary" sx={{ mb: 1 }}>ESTRUTURA</Typography>
         <Typography variant="h4" gutterBottom>Card</Typography>
-        {/* Principal: Paper (container de layout com sombra e bordas) */}
+        {/* Paper (container de layout com sombra e bordas) */}
         <Paper sx={{ p: 4, width: '100%', maxWidth: 350, textAlign: 'left' }}>
           <Stack spacing={2}>
             <Typography variant="h6" fontWeight="bold">Título do Card</Typography>
@@ -128,9 +128,9 @@ export default function App() {
           </Stack>
         </Paper>
       </ScrollReveal>
-      {/* FIM: CARDS */}
+      {/* CARDS */}
 
-      {/* INÍCIO: FEEDBACK VISUAL */}
+      {/* FEEDBACK VISUAL */}
       <ScrollReveal>
         <Typography variant="overline" color="secondary" sx={{ mb: 1 }}>FEEDBACK VISUAL</Typography>
         <Typography variant="h4" gutterBottom>Progress & Alerts</Typography>
@@ -141,14 +141,14 @@ export default function App() {
           <Badge badgeContent={3} color="secondary"><EmailOutlined /></Badge>
         </Stack>
       </ScrollReveal>
-      {/* FIM: FEEDBACK VISUAL */}
+      {/* FEEDBACK VISUAL */}
 
-      {/* INÍCIO: CONTROLES */}
+      {/* CONTROLES */}
       <ScrollReveal>
         <Typography variant="overline" color="secondary" sx={{ mb: 1 }}>CONTROLES</Typography>
         <Typography variant="h4" gutterBottom>Switch, Slider & Rating</Typography>
         <Stack spacing={5} sx={{ width: '100%', maxWidth: 350 }}>
-          {/* Principais: Switch (controla o estado isDarkMode), Slider e Rating */}
+          {/* Switch (controla o estado isDarkMode), Slider e Rating */}
           <FormControlLabel 
             control={<Switch checked={isDarkMode} onChange={() => setIsDarkMode(!isDarkMode)} color="secondary" />} 
             label={isDarkMode ? "Modo Noturno" : "Modo Claro"} 
@@ -157,25 +157,25 @@ export default function App() {
           <Rating value={rating} onChange={(e, v) => setRating(v)} precision={0.5} />
         </Stack>
       </ScrollReveal>
-      {/* FIM: CONTROLES */}
+      {/* CONTROLES */}
 
-      {/* INÍCIO: COMPOSIÇÃO */}
+      {/* COMPOSIÇÃO */}
       <ScrollReveal>
         <Typography variant="overline" color="secondary" sx={{ mb: 1 }}>COMPOSIÇÃO</Typography>
         <Typography variant="h4" gutterBottom>Accordion & FAB</Typography>
-        {/* Principais: Accordion (ocultar/mostrar) e Fab (botão flutuante de ação) */}
+        {/* Accordion (ocultar/mostrar) e Fab (botão flutuante de ação) */}
         <Accordion sx={{ width: '100%', maxWidth: 450 }}>
           <AccordionSummary expandIcon={<ExpandMore />}><Typography fontWeight="bold">Como funciona o MUI?</Typography></AccordionSummary>
           <AccordionDetails><Typography variant="body2">É uma coleção de blocos de construção.</Typography></AccordionDetails>
         </Accordion>
         <Fab color="secondary" variant="extended" sx={{ mt: 5, color: '#fff' }}><Add sx={{ mr: 1 }} /> Criar Novo</Fab>
       </ScrollReveal>
-      {/* FIM: COMPOSIÇÃO */}
+      {/* COMPOSIÇÃO */}
 
-      {/* INÍCIO: LOGIN */}
+      {/* LOGIN */}
       <ScrollReveal>
         <Typography variant="h4" sx={{ mb: 6, fontWeight: 900 }}>Aplicação Prática</Typography>
-        {/* Integração completa: Paper, TextField com InputAdornment, Button e Divider */}
+        {/* Paper, TextField com InputAdornment, Button e Divider */}
         <Paper elevation={0} sx={{ maxWidth: 400, width: '100%', p: 5 }}>
           <Stack spacing={4}>
             <Avatar sx={{ mx: 'auto', bgcolor: 'secondary.main', mb: 2 }}><LockOutlined sx={{color: '#fff'}} /></Avatar>
@@ -185,7 +185,7 @@ export default function App() {
           </Stack>
         </Paper>
       </ScrollReveal>
-      {/* FIM: LOGIN */}
+      {/* LOGIN */}
 
     </ThemeProvider>
   );
